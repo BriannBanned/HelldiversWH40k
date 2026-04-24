@@ -59,7 +59,12 @@
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="AR-23 Liberator" hidden="false" id="b3ce-5eb2-ab0c-0330" type="selectionEntry" targetId="cf7c-7c07-5c21-a89f"/>
+        <entryLink import="true" name="AR-23 Liberator" hidden="false" id="b3ce-5eb2-ab0c-0330" type="selectionEntry" targetId="cf7c-7c07-5c21-a89f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38a9-ec6b-993a-4eb7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38a9-ec6b-993a-4eb7-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
   </selectionEntries>
