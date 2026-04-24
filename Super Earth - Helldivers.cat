@@ -25,9 +25,51 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pistol-whip" hidden="false" id="7241-66cd-9030-9973"/>
-    <selectionEntry type="upgrade" import="true" name="P-4 Senator" hidden="false" id="18bd-2801-c882-407b"/>
-    <selectionEntry type="upgrade" import="true" name="Democratic Punch" hidden="false" id="e9b9-dc12-b3c2-0ccc"/>
+    <selectionEntry type="upgrade" import="true" name="Pistol-whip" hidden="false" id="7241-66cd-9030-9973">
+      <profiles>
+        <profile name="Pistol-whip" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="f292-738b-085f-9911">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="P-4 Senator" hidden="false" id="18bd-2801-c882-407b">
+      <profiles>
+        <profile name="P-4 Senator" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9e05-70a3-04a7-40ca">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Democratic Punch" hidden="false" id="e9b9-dc12-b3c2-0ccc">
+      <profiles>
+        <profile name="Democratic Punch" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1cfc-f1bd-499a-1c69">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="FLAM-40 Flamethrower" hidden="false" id="2f76-29e1-bccf-dd18"/>
     <selectionEntry type="upgrade" import="true" name="P-72 Crisper" hidden="false" id="cc2c-ebd7-1a07-618a"/>
     <selectionEntry type="upgrade" import="true" name="AR-23P Liberator Penetrator" hidden="false" id="f9dc-c85d-390e-cc87">
@@ -69,6 +111,17 @@
         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
       </characteristics>
     </profile>
+    <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0a5a-8918-7f50-c9db">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">6+</characteristic>
+      </characteristics>
+      <comment>6+</comment>
+    </profile>
+    <profile name="Democracy Protects" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="19c9-8e91-824c-1d3d">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within range of an objective marker you control, this model has the [FEEL NO PAIN 3+] ability.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="SPECIAL" id="4434-2f46-a3c3-5faa" hidden="false">
@@ -107,6 +160,12 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e90-67d9-fd13-392f-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Pistol-whip" hidden="false" id="3a72-ef21-91fe-f269" type="selectionEntry" targetId="7241-66cd-9030-9973">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77c8-eecf-1ef9-4f9d-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77c8-eecf-1ef9-4f9d-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heavy Helldiver" hidden="false" id="85f9-133c-8bb2-fab9">
@@ -122,6 +181,18 @@
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d986-6c24-5dd0-fbb7-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d986-6c24-5dd0-fbb7-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Democratic Punch" hidden="false" id="ea57-7f74-8f84-f4a0" type="selectionEntry" targetId="e9b9-dc12-b3c2-0ccc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3184-ed56-3b77-e928-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3184-ed56-3b77-e928-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="P-4 Senator" hidden="false" id="7bed-d56c-8e50-f2b3" type="selectionEntry" targetId="18bd-2801-c882-407b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="13ab-60bf-09f6-8ce8-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13ab-60bf-09f6-8ce8-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -144,6 +215,10 @@
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Invulnerable Save" id="8975-2841-d502-c1b0" hidden="false" type="profile" targetId="0a5a-8918-7f50-c9db"/>
+        <infoLink name="Democracy Protects" id="829c-a191-c559-06a6" hidden="false" type="profile" targetId="19c9-8e91-824c-1d3d"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>
