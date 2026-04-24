@@ -294,7 +294,7 @@
     </profile>
     <profile name="Crewed Transport" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d8b9-a87a-9ef2-b4e6">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has the transport capacity of 4 HELLDIVER models. While this model has no HELLDIVER models inside of it, this model is unable to perform any movement, attacks, or charges.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has the transport capacity of 1 HELLDIVER model. While this model has no HELLDIVER models inside of it, this model is unable to perform any movement, attacks, or charges.</characteristic>
       </characteristics>
     </profile>
     <profile name="Sentry Fortification" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="218e-dcbe-bb56-22e1">
@@ -1027,7 +1027,7 @@ Before the beginning of the battle, choose 4 stratagems that are either EAGLE, O
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Exosuit Leg" hidden="false" id="7d43-b2f8-5a0d-263c" type="selectionEntry" targetId="46b3-0738-6025-b4e4">
+        <entryLink import="true" name="Exosuit Leg" hidden="false" id="7d43-b2f8-5a0d-263c" type="selectionEntry" targetId="46b3-0738-6025-b4e4" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="88a6-7d26-0c4c-8d0e" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebef-270b-9d61-0830" includeChildSelections="false"/>
@@ -1049,8 +1049,55 @@ Before the beginning of the battle, choose 4 stratagems that are either EAGLE, O
         </infoLink>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Patriot Exosuit HMG" hidden="false" id="714e-9ecc-5dff-a549"/>
-        <selectionEntry type="upgrade" import="true" name="Patriot Exosuit Missile Launcher" hidden="false" id="2ec3-980e-5284-aaab"/>
+        <selectionEntry type="upgrade" import="true" name="Patriot Exosuit HMG" hidden="false" id="714e-9ecc-5dff-a549" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3000-115d-195b-3264-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3000-115d-195b-3264-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Patriot Exosuit HMG" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0efa-ff1b-b7cb-e72e">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">8</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Patriot Exosuit Missile Launcher" hidden="false" id="2ec3-980e-5284-aaab" sortIndex="2">
+          <profiles>
+            <profile name="➤ Patriot Exosuit Missile Launcher - frag" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4cda-5ab4-cfac-9ea6">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="➤ Patriot Exosuit Missile Launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="59ab-5f1c-5384-165d">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="46ec-4cb7-49f1-0ecb-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46ec-4cb7-49f1-0ecb-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
   </selectionEntries>
