@@ -181,6 +181,51 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stim Pistol" hidden="false" id="92aa-4ce4-ae61-8a89">
+      <profiles>
+        <profile name="Stim Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="bf26-a96b-845f-a6ae">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="SG-20 Halt" hidden="false" id="acb0-ad6b-4f54-4761">
+      <profiles>
+        <profile name="SG-20 Halt" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="cc9e-04c2-c3b9-9178">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Metal Chassis" hidden="false" id="fb70-922f-53c9-8ca2">
+      <profiles>
+        <profile name="Metal Chassis" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9089-9769-6aa0-5939">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="AR-23 Liberator" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a28c-6ad2-fb64-c20f">
@@ -249,7 +294,7 @@
     </profile>
     <profile name="Crewed Transport" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d8b9-a87a-9ef2-b4e6">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has the transport capacity of 1 HELLDIVER model. While this model has no HELLDIVER models inside of it, this model is unable to perform any movement, attacks, or charges.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has the transport capacity of 4 HELLDIVER models. While this model has no HELLDIVER models inside of it, this model is unable to perform any movement, attacks, or charges.</characteristic>
       </characteristics>
     </profile>
     <profile name="Sentry Fortification" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="218e-dcbe-bb56-22e1">
@@ -799,6 +844,214 @@ Before the beginning of the battle, choose 4 stratagems that are either EAGLE, O
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Medical Officer" hidden="false" id="b986-cebe-3207-3654">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="c1fa-c2d0-fad4-fb82" primary="false" name="Character"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="a793-e688-158b-3947" primary="false" name="Infantry"/>
+        <categoryLink targetId="e338-111e-d0c6-b687" id="4975-1667-84f2-6ae5" primary="true" name="Battleline"/>
+        <categoryLink targetId="d344-08dc-e09a-cea3" id="96cd-556d-4c68-9dd9" primary="false" name="Helldiver"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Helldiver" id="b1cc-18a1-f995-675f" hidden="false" type="profile" targetId="6cb0-3515-1eec-8391">
+          <modifiers>
+            <modifier type="set" value="Medical Officer" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Ranged Stims" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9b3f-151f-29f6-27a9">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, this model can use this ability instead of making any ranged attacks. If it does, select one friendly HELLDIVER model within 12&quot; of it and within line of sight; that model regains up to D3 lost wounds.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Pistol-whip" hidden="false" id="db7f-5df9-1e15-a952" type="selectionEntry" targetId="7241-66cd-9030-9973"/>
+        <entryLink import="true" name="P-2 Peacemaker" hidden="false" id="31ab-5ffc-dec6-432c" type="selectionEntry" targetId="18fc-8c60-13a9-e3c2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bea5-dd68-578d-6756-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bea5-dd68-578d-6756-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Stim Pistol" hidden="false" id="0ca2-e1d2-d060-e564" type="selectionEntry" targetId="92aa-4ce4-ae61-8a89">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c120-4277-84de-4d42-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c120-4277-84de-4d42-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Truth Enforcer" hidden="false" id="deae-dd9f-f198-b4a2">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="dab6-b9e1-63de-fb33" primary="false" name="Character"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="117c-d3ac-a71d-e5eb" primary="false" name="Infantry"/>
+        <categoryLink targetId="e338-111e-d0c6-b687" id="896e-54e3-70ad-2589" primary="true" name="Battleline"/>
+        <categoryLink targetId="d344-08dc-e09a-cea3" id="9f61-a324-2f99-deeb" primary="false" name="Helldiver"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="254f-79f0-baf9-3354" primary="false" name="Grenades"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Helldiver" id="bd0c-0f9c-e57e-8f36" hidden="false" type="profile" targetId="6cb0-3515-1eec-8391">
+          <modifiers>
+            <modifier type="set" value="Truth Enforcer" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="P-4 Senator" hidden="false" id="d7d5-e931-e9d8-e4a1" type="selectionEntry" targetId="18bd-2801-c882-407b" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8405-0984-5d2c-5eae-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8405-0984-5d2c-5eae-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="SG-20 Halt" hidden="false" id="333a-b7b3-9a9e-1e31" type="selectionEntry" targetId="acb0-ad6b-4f54-4761" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f57-6463-d74d-83b5-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f57-6463-d74d-83b5-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Pistol-whip" hidden="false" id="55e5-2178-4ab9-6b28" type="selectionEntry" targetId="7241-66cd-9030-9973">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a4c5-b77d-25e5-c741-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4c5-b77d-25e5-c741-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Silence Treason (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4a44-874e-b2eb-f4ec">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After this model, or a friendly unit within 6&quot; of this model, has resolved its attacks, if an enemy unit lost one or more wounds as a result of those attacks, that enemy unit must take a Battle-shock test. An enemy unit can only be affected by this ability once per phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="M-102 Fast Recon Vehicle" hidden="false" id="599c-2883-3d91-8715">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="M-102 Fast Recon Vehicle" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="aed0-d77e-0c15-7ace">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">8</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Assault Vehicle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="517e-65f7-812a-0b63">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Metal Chassis" hidden="false" id="d9fc-ec75-afbd-cd0c" type="selectionEntry" targetId="fb70-922f-53c9-8ca2" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="91b9-484f-f37e-4399-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91b9-484f-f37e-4399-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="dbd4-63-af05-998" id="2c5e-5325-97a0-d901" primary="true" name="Vehicle"/>
+        <categoryLink targetId="9c68-6eca-9597-6619" id="050e-ad9a-3620-c2e2" primary="false" name="Support Stratagem"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Crewed Transport" id="bddb-65f8-dd35-00b1" hidden="false" type="profile" targetId="d8b9-a87a-9ef2-b4e6"/>
+        <infoLink name="Deadly Demise" id="89e8-d179-756e-3e46" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D3" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="MG-206 Heavy Machine Gun" hidden="false" id="7643-1234-db92-87c0" sortIndex="1">
+          <profiles>
+            <profile name="MG-206 Heavy Machine Gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="93af-5256-4911-3677">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">8</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="236c-bfd5-879d-2ea5-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="236c-bfd5-879d-2ea5-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="EXO-45 Patriot Exosuit" hidden="false" id="e1a0-942d-5361-2bbf">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="EXO-45 Patriot Exosuit" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5ab3-edb4-5930-e1b9">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">8</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">-</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Exosuit Leg" hidden="false" id="7d43-b2f8-5a0d-263c" type="selectionEntry" targetId="46b3-0738-6025-b4e4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="88a6-7d26-0c4c-8d0e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebef-270b-9d61-0830" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="dbd4-63-af05-998" id="5825-bee7-c45b-566a" primary="true" name="Vehicle"/>
+        <categoryLink targetId="6dda-e157-334d-e93a" id="a8c4-544f-d4bf-41f4" primary="false" name="Walker"/>
+        <categoryLink targetId="9c68-6eca-9597-6619" id="1e4f-3cbb-ccb3-0502" primary="false" name="Support Stratagem"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Damaged: 1-3 Wounds Remaining" id="fa7b-ac8c-238e-8fa8" hidden="false" type="profile" targetId="2a62-209e-97e3-6765"/>
+        <infoLink name="Crewed Transport" id="34e1-833f-3e86-b97f" hidden="false" type="profile" targetId="d8b9-a87a-9ef2-b4e6"/>
+        <infoLink name="Deadly Demise" id="cd7b-42ee-6b65-6f7b" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D3" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Patriot Exosuit HMG" hidden="false" id="714e-9ecc-5dff-a549"/>
+        <selectionEntry type="upgrade" import="true" name="Patriot Exosuit Missile Launcher" hidden="false" id="2ec3-980e-5284-aaab"/>
+      </selectionEntries>
     </selectionEntry>
   </selectionEntries>
   <infoLinks>
