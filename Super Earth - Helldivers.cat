@@ -10,6 +10,36 @@
         <infoLink name="AR-23 Liberator" id="b608-0f91-54b6-a682" hidden="false" type="profile" targetId="a28c-6ad2-fb64-c20f"/>
       </infoLinks>
     </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile name="AR-23 Liberator" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a28c-6ad2-fb64-c20f">
+      <characteristics>
+        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">ASSAULT</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Assault Helldiver" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3acd-e210-e433-e3ce">
+      <characteristics>
+        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1"/>
+        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4"/>
+        <characteristic name="SV" typeId="450-a17e-9d5e-29da"/>
+        <characteristic name="W" typeId="750a-a2ec-90d3-21fe"/>
+        <characteristic name="LD" typeId="58d2-b879-49c7-43bc"/>
+        <characteristic name="OC" typeId="bef7-942a-1a23-59f8"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedRules>
+    <rule name="SPECIAL" id="4434-2f46-a3c3-5faa" hidden="false">
+      <description>Weapons with the keyword [SPECIAL] in their profile can only be used if the wielding model was not reinforced in the same turn.</description>
+    </rule>
+  </sharedRules>
+  <selectionEntries>
     <selectionEntry type="unit" import="true" name="Assault Helldiver" hidden="false" id="19c6-d4cd-7d06-9088">
       <infoLinks>
         <infoLink name="Assault Helldiver" id="2582-c72e-070d-f13b" hidden="false" type="profile" targetId="3acd-e210-e433-e3ce"/>
@@ -41,33 +71,5 @@
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="a49a-b6b6-b0f6-bcf9" primary="false" name="Grenades"/>
       </categoryLinks>
     </selectionEntry>
-  </sharedSelectionEntries>
-  <sharedProfiles>
-    <profile name="AR-23 Liberator" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a28c-6ad2-fb64-c20f">
-      <characteristics>
-        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
-        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">ASSAULT</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Assault Helldiver" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3acd-e210-e433-e3ce">
-      <characteristics>
-        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1"/>
-        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4"/>
-        <characteristic name="SV" typeId="450-a17e-9d5e-29da"/>
-        <characteristic name="W" typeId="750a-a2ec-90d3-21fe"/>
-        <characteristic name="LD" typeId="58d2-b879-49c7-43bc"/>
-        <characteristic name="OC" typeId="bef7-942a-1a23-59f8"/>
-      </characteristics>
-    </profile>
-  </sharedProfiles>
-  <sharedRules>
-    <rule name="SPECIAL" id="4434-2f46-a3c3-5faa" hidden="false">
-      <description>Weapons with the keyword [SPECIAL] in their profile can only be used if the wielding model was not reinforced in the same turn.</description>
-    </rule>
-  </sharedRules>
+  </selectionEntries>
 </catalogue>
