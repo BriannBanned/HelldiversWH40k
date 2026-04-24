@@ -70,8 +70,36 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="FLAM-40 Flamethrower" hidden="false" id="2f76-29e1-bccf-dd18"/>
-    <selectionEntry type="upgrade" import="true" name="P-72 Crisper" hidden="false" id="cc2c-ebd7-1a07-618a"/>
+    <selectionEntry type="upgrade" import="true" name="FLAM-40 Flamethrower" hidden="false" id="2f76-29e1-bccf-dd18">
+      <profiles>
+        <profile name="FLAM-40 Flamethrower" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e915-475e-2995-bf73">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">IGNORES COVER, TORRENT, SPECIAL</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="P-72 Crisper" hidden="false" id="cc2c-ebd7-1a07-618a">
+      <profiles>
+        <profile name="P-72 Crisper" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f280-f3f9-368a-7c91">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">PISTOL, TORRENT</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="AR-23P Liberator Penetrator" hidden="false" id="f9dc-c85d-390e-cc87">
       <infoLinks>
         <infoLink name="AR-23P Liberator Penetrator" id="057a-2198-5faf-71f5" hidden="false" type="profile" targetId="87a5-2664-9185-ec39"/>
@@ -120,6 +148,21 @@
     <profile name="Democracy Protects" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="19c9-8e91-824c-1d3d">
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within range of an objective marker you control, this model has the [FEEL NO PAIN 3+] ability.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Flames of Democracy" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ce2b-1a10-572f-40d8">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, you can select one enemy INFANTRY or MONSTER unit hit by one or more of those attacks made with a [TORRENT] weapon. That enemy unit must take a Battle-shock test, subtracting 2 from that test.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Helldiver" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6cb0-3515-1eec-8391">
+      <characteristics>
+        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+        <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">4+</characteristic>
+        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -219,6 +262,52 @@
         <infoLink name="Invulnerable Save" id="8975-2841-d502-c1b0" hidden="false" type="profile" targetId="0a5a-8918-7f50-c9db"/>
         <infoLink name="Democracy Protects" id="829c-a191-c559-06a6" hidden="false" type="profile" targetId="19c9-8e91-824c-1d3d"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Flamer Helldiver" hidden="false" id="7cdc-9b1a-697b-7f4a">
+      <infoLinks>
+        <infoLink name="Helldiver" id="edcf-1e29-eb7a-9c88" hidden="false" type="profile" targetId="6cb0-3515-1eec-8391"/>
+        <infoLink name="Flames of Democracy" id="7844-0db4-f7bd-687a" hidden="false" type="profile" targetId="ce2b-1a10-572f-40d8"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="52af-816e-f693-9f2e" primary="false" name="Character"/>
+        <categoryLink targetId="d344-08dc-e09a-cea3" id="4cad-1d99-e93f-ac1f" primary="false" name="Helldiver"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="d9fe-37f9-5cf1-e08d" primary="false" name="Infantry"/>
+        <categoryLink targetId="e338-111e-d0c6-b687" id="3f31-b3af-92d2-ba1d" primary="true" name="Battleline"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="e75c-5e4b-1ce7-1606" primary="false" name="Grenades"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="AR-23 Liberator" hidden="false" id="fb92-082f-4ac1-1ef9" type="selectionEntry" targetId="cf7c-7c07-5c21-a89f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c29b-810a-9e2b-d98d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5822-37b2-b310-95c9" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Pistol-whip" hidden="false" id="4690-92dd-29af-b9ce" type="selectionEntry" targetId="7241-66cd-9030-9973">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fd2-390f-0d0e-35b4-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fd2-390f-0d0e-35b4-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="FLAM-40 Flamethrower" hidden="false" id="f9f6-0dc1-23b0-0fae" type="selectionEntry" targetId="2f76-29e1-bccf-dd18">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81ea-b36a-a221-2723-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81ea-b36a-a221-2723-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="P-72 Crisper" hidden="false" id="0dca-e140-cbfa-6f2b" type="selectionEntry" targetId="cc2c-ebd7-1a07-618a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a5d0-9f8e-43ec-c97b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5d0-9f8e-43ec-c97b-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>
