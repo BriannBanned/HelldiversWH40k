@@ -80,7 +80,7 @@
             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">IGNORES COVER, TORRENT, SPECIAL</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent, Special</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -95,7 +95,7 @@
             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">PISTOL, TORRENT</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol, Torrent</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -104,6 +104,36 @@
       <infoLinks>
         <infoLink name="AR-23P Liberator Penetrator" id="057a-2198-5faf-71f5" hidden="false" type="profile" targetId="87a5-2664-9185-ec39"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="APHE Autocannon" hidden="false" id="565c-a712-53ff-6672">
+      <profiles>
+        <profile name="APHE Autocannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="08ee-0d6f-284a-ac9e">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked, Anti-Infantry 4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Exosuit Leg" hidden="false" id="46b3-0738-6025-b4e4">
+      <profiles>
+        <profile name="Exosuit Leg" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="b67b-f841-3f71-bf74">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -165,10 +195,35 @@
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
       </characteristics>
     </profile>
+    <profile name="Damaged: 1-3 Wounds Remaining" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2a62-209e-97e3-6765">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-3 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+      </characteristics>
+      <comment>1-3</comment>
+    </profile>
+    <profile name="Crewed Transport" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d8b9-a87a-9ef2-b4e6">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has the transport capacity of 1 HELLDIVER model. While this model has no HELLDIVER models inside of it, this model is unable to perform any movement, attacks, or charges.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
-    <rule name="SPECIAL" id="4434-2f46-a3c3-5faa" hidden="false">
+    <rule name="Special" id="4434-2f46-a3c3-5faa" hidden="false">
       <description>Weapons with the keyword [SPECIAL] in their profile can only be used if the wielding model was not reinforced in the same turn.</description>
+    </rule>
+    <rule name="Rapid Reinforcement" id="d10f-febb-6d48-7c67" hidden="false">
+      <description>In the Reinforcements step of your Movement phase if there is less than 4 friendly HELLDIVER units on the battlefield, you may set up a HELLDIVER unit from your Strategic Reserves anywhere on the battlefield that is wholly within 10&quot; of a friendly HELLDIVER model within that model&apos;s line of sight and more than 3&quot; away from all enemy models.
+
+If there are no friendly HELLDIVER models currently on the battlefield, you must instead set this unit up wholly within your deployment zone and more than 6&quot; away from all enemy models.
+
+</description>
+    </rule>
+    <rule name="Only Whats Needed" id="f384-9c36-0de9-c360" hidden="false">
+      <description>During the Declare Battle Formations step, you can assign any number of HELLDIVER or SUPPORT STRATAGEM units from your army list to your Strategic Reserves. Your army can never include more than 4 HELLDIVER units on the battlefield at the same time. You cannot place any SUPPORT STRATAGEMS during the Deploy Armies step.</description>
+    </rule>
+    <rule name="Request Equipment" id="739a-308b-ed12-0538" hidden="false">
+      <description>You always have access to the SUPPORT STRATAGEM stratagem.
+Before the beginning of the battle, choose 4 stratagems that are either EAGLE, ORBITAL, or SUPPORT stratagems, you would have access to these stratagems until the end of battle.</description>
     </rule>
   </sharedRules>
   <selectionEntries>
@@ -220,19 +275,19 @@
         <categoryLink targetId="d344-08dc-e09a-cea3" id="4b2c-e43a-fbd4-2063" primary="false" name="Helldiver"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="AR-23P Liberator Penetrator" hidden="false" id="aa60-5c5c-3640-da1d" type="selectionEntry" targetId="f9dc-c85d-390e-cc87">
+        <entryLink import="true" name="AR-23P Liberator Penetrator" hidden="false" id="aa60-5c5c-3640-da1d" type="selectionEntry" targetId="f9dc-c85d-390e-cc87" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d986-6c24-5dd0-fbb7-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d986-6c24-5dd0-fbb7-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Democratic Punch" hidden="false" id="ea57-7f74-8f84-f4a0" type="selectionEntry" targetId="e9b9-dc12-b3c2-0ccc">
+        <entryLink import="true" name="Democratic Punch" hidden="false" id="ea57-7f74-8f84-f4a0" type="selectionEntry" targetId="e9b9-dc12-b3c2-0ccc" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3184-ed56-3b77-e928-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3184-ed56-3b77-e928-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="P-4 Senator" hidden="false" id="7bed-d56c-8e50-f2b3" type="selectionEntry" targetId="18bd-2801-c882-407b">
+        <entryLink import="true" name="P-4 Senator" hidden="false" id="7bed-d56c-8e50-f2b3" type="selectionEntry" targetId="18bd-2801-c882-407b" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="13ab-60bf-09f6-8ce8-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13ab-60bf-09f6-8ce8-max" includeChildSelections="false"/>
@@ -295,7 +350,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fd2-390f-0d0e-35b4-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="FLAM-40 Flamethrower" hidden="false" id="f9f6-0dc1-23b0-0fae" type="selectionEntry" targetId="2f76-29e1-bccf-dd18">
+        <entryLink import="true" name="FLAM-40 Flamethrower" hidden="false" id="f9f6-0dc1-23b0-0fae" type="selectionEntry" targetId="2f76-29e1-bccf-dd18" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81ea-b36a-a221-2723-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81ea-b36a-a221-2723-max" includeChildSelections="false"/>
@@ -309,5 +364,59 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="EXO-49 Emancipator Exosuit" hidden="false" id="a1b6-6b6b-cac3-2c85">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="EXO-49 Emancipator Exosuit" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3abe-6de3-63f9-1a5e">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">8</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">-</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="APHE Autocannon" hidden="false" id="b4a5-f6f2-ba40-3673" type="selectionEntry" targetId="565c-a712-53ff-6672">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6420-810c-39f3-746d-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6420-810c-39f3-746d-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Exosuit Leg" hidden="false" id="8486-81ca-e60c-eb7b" type="selectionEntry" targetId="46b3-0738-6025-b4e4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="05a8-5436-36c0-7d86-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05a8-5436-36c0-7d86-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="dbd4-63-af05-998" id="9168-207b-1506-1aaa" primary="true" name="Vehicle"/>
+        <categoryLink targetId="6dda-e157-334d-e93a" id="4608-f829-8e5f-be3a" primary="false" name="Walker"/>
+        <categoryLink targetId="9c68-6eca-9597-6619" id="d0bb-deda-b6a3-8c79" primary="false" name="Support Stratagem"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Damaged: 1-3 Wounds Remaining" id="64e4-3987-512f-1be3" hidden="false" type="profile" targetId="2a62-209e-97e3-6765"/>
+        <infoLink name="Crewed Transport" id="fc8d-7b5c-64b1-8de1" hidden="false" type="profile" targetId="d8b9-a87a-9ef2-b4e6"/>
+        <infoLink name="Deadly Demise" id="cc5b-671d-37f7-5994" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D3" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </selectionEntries>
+  <infoLinks>
+    <infoLink name="Only Whats Needed" id="476e-ea5f-fa73-943b" hidden="false" type="rule" targetId="f384-9c36-0de9-c360"/>
+    <infoLink name="Rapid Reinforcement" id="90b1-2b68-c18d-6c7f" hidden="false" type="rule" targetId="d10f-febb-6d48-7c67"/>
+    <infoLink name="Request Equipment" id="5080-a12c-e678-cf51" hidden="false" type="rule" targetId="739a-308b-ed12-0538"/>
+  </infoLinks>
 </catalogue>
