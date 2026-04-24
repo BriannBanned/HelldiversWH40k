@@ -10,7 +10,21 @@
         <infoLink name="AR-23 Liberator" id="b608-0f91-54b6-a682" hidden="false" type="profile" targetId="a28c-6ad2-fb64-c20f"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="P-2 Peacemaker" hidden="false" id="18fc-8c60-13a9-e3c2"/>
+    <selectionEntry type="upgrade" import="true" name="P-2 Peacemaker" hidden="false" id="18fc-8c60-13a9-e3c2">
+      <profiles>
+        <profile name="P-2 Peacemaker" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6a95-f72d-8dbb-9274">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pistol-whip" hidden="false" id="7241-66cd-9030-9973"/>
     <selectionEntry type="upgrade" import="true" name="P-4 Senator" hidden="false" id="18bd-2801-c882-407b"/>
     <selectionEntry type="upgrade" import="true" name="Democratic Punch" hidden="false" id="e9b9-dc12-b3c2-0ccc"/>
@@ -85,6 +99,12 @@
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38a9-ec6b-993a-4eb7-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38a9-ec6b-993a-4eb7-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="P-2 Peacemaker" hidden="false" id="29c7-fbde-10e3-46a7" type="selectionEntry" targetId="18fc-8c60-13a9-e3c2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e90-67d9-fd13-392f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e90-67d9-fd13-392f-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
