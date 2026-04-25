@@ -16,10 +16,10 @@
         <profile name="P-2 Peacemaker" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6a95-f72d-8dbb-9274">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
           </characteristics>
@@ -46,7 +46,7 @@
         <profile name="P-4 Senator" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9e05-70a3-04a7-40ca">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
@@ -114,7 +114,7 @@
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked, Anti-Infantry 4+</characteristic>
           </characteristics>
@@ -156,7 +156,7 @@
         <profile name="SG-8 Punisher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3a25-7069-f91e-d99d">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
@@ -188,7 +188,7 @@
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
@@ -231,12 +231,12 @@
     <profile name="AR-23 Liberator" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a28c-6ad2-fb64-c20f">
       <characteristics>
         <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+        <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
+        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Rapid Fire 2</characteristic>
       </characteristics>
     </profile>
     <profile name="Assault Helldiver" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3acd-e210-e433-e3ce">
@@ -252,12 +252,12 @@
     <profile name="AR-23P Liberator Penetrator" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="87a5-2664-9185-ec39">
       <characteristics>
         <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-        <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
         <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
         <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
+        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Rapid fire 1</characteristic>
       </characteristics>
     </profile>
     <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0a5a-8918-7f50-c9db">
@@ -268,7 +268,7 @@
     </profile>
     <profile name="Democracy Protects" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="19c9-8e91-824c-1d3d">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within range of an objective marker you control, this model has the [Feel No Pain 4+] ability.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within range of an objective marker, this model has the [Feel No Pain 4+] ability.</characteristic>
       </characteristics>
     </profile>
     <profile name="Flames of Democracy" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ce2b-1a10-572f-40d8">
@@ -317,10 +317,10 @@
   </sharedProfiles>
   <sharedRules>
     <rule name="Special" id="4434-2f46-a3c3-5faa" hidden="false">
-      <description>Weapons with the keyword [SPECIAL] in their profile can only be used if the wielding model was not reinforced in the same turn.</description>
+      <description>Weapons with the keyword [SPECIAL] in their profile can only be used if the wielding model was not reinforced in the same turn. Weapons with the keyword [SPECIAL] can only be shot instead of other ranged weapons.</description>
     </rule>
     <rule name="Rapid Reinforcement" id="d10f-febb-6d48-7c67" hidden="false">
-      <description>In the Reinforcements step of your Movement phase if there is less than 4 friendly HELLDIVER units on the battlefield, you may set up a HELLDIVER unit from your Strategic Reserves anywhere on the battlefield that is wholly within 10&quot; of a friendly HELLDIVER model within that model&apos;s line of sight and more than 3&quot; away from all enemy models.
+      <description>In the Reinforcements step of your Movement phase if there is less than 4 friendly HELLDIVER units on the battlefield, you may set up a HELLDIVER unit from your Strategic Reserves anywhere on the battlefield that is wholly within 8&quot; of a friendly HELLDIVER model within that model&apos;s line of sight and more than 3&quot; away from all enemy models, if a HELLDIVER is reinforced within 6&quot; of a enemy unit that HELLDIVER cannot charge until the start of the next turn.
 
 If there are no friendly HELLDIVER models currently on the battlefield, you must instead set this unit up wholly within your deployment zone and more than 6&quot; away from all enemy models.</description>
     </rule>
@@ -547,7 +547,7 @@ Before the beginning of the battle, choose 4 stratagems that are either EAGLE, O
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="b518-63fa-1ac4-687d" primary="false" name="Grenades"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -556,7 +556,7 @@ Before the beginning of the battle, choose 4 stratagems that are either EAGLE, O
       <profiles>
         <profile name="Democratic Detonation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e4e9-43e9-941c-013a">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, in your Shooting phase, you can use this ability. If you do, for each unit within 9&quot; of this model (including this model&apos;s unit), roll a number of D6 equal to the combined Wounds characteristics of all models currently in that unit. For each 4+, that unit suffers 2 mortal wounds.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, in your Shooting phase, you can use this ability. If you do, for each unit within 9&quot; of this model (including this model&apos;s unit), for each unit suffers 3D3 mortal wounds. This ability can only be activated if this model was not reinforced in the same turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -568,12 +568,6 @@ Before the beginning of the battle, choose 4 stratagems that are either EAGLE, O
         </infoLink>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="AR-23 Liberator" hidden="false" id="6f25-8ffc-abfe-2162" type="selectionEntry" targetId="cf7c-7c07-5c21-a89f">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92c4-7285-1135-8ac9-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92c4-7285-1135-8ac9-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="P-2 Peacemaker" hidden="false" id="1efc-52c8-5f06-a7f1" type="selectionEntry" targetId="18fc-8c60-13a9-e3c2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0610-e264-2606-26a0-min" includeChildSelections="false"/>
